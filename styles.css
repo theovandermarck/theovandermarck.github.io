@@ -253,3 +253,42 @@ a:focus-visible, button:focus-visible {
   font-weight: 500;
   white-space: nowrap;
 }
+
+.photo-hero { padding-bottom: 24px; }
+
+.gallery-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px var(--edge) 48px;
+}
+
+/* Columns let photos keep their own aspect ratios (mixed portrait/landscape) */
+.gallery {
+  column-count: 3;
+  column-gap: 16px;
+}
+
+.gallery figure {
+  margin: 0 0 16px;
+  break-inside: avoid;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+.gallery a:hover img { opacity: 0.9; }
+
+.gallery figcaption {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  margin-top: 6px;
+}
+
+.nav-links a.current { color: var(--text); }
+
+@media (max-width: 800px) { .gallery { column-count: 2; } }
+@media (max-width: 480px) { .gallery { column-count: 1; } }
