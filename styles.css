@@ -277,7 +277,7 @@ a:focus-visible, button:focus-visible {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 6px;
+  border-radius: 2px;
 }
 
 .gallery a:hover img { opacity: 0.9; }
